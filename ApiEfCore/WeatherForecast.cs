@@ -1,4 +1,4 @@
-namespace Parcial2;
+namespace ApiEfCore;
 
 public class WeatherForecast
 {

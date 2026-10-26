@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Parcial2.Controllers;
+namespace ApiEfCore.Controllers;
 
 [ApiController]
 [Route("[controller]")]
