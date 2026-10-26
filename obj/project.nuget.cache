@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "T1I29tO1JqE=",
+  "dgSpecHash": "+nNOBby+nsE=",
   "success": true,
-  "projectFilePath": "/home/dario/Escritorio/Programacion 4/Ejercicios/Parcial2/Parcial2.csproj",
+  "projectFilePath": "C:\\Users\\Matias\\Desktop\\Programacion_4\\parcial2\\Programacion4Parcial2\\Parcial2.csproj",
   "expectedPackageFiles": [
-    "/home/dario/.nuget/packages/microsoft.aspnetcore.openapi/10.0.13/microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
-    "/home/dario/.nuget/packages/microsoft.openapi/2.12.2/microsoft.openapi.2.12.2.nupkg.sha512"
+    "C:\\Users\\Matias\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
+    "C:\\Users\\Matias\\.nuget\\packages\\microsoft.openapi\\2.12.2\\microsoft.openapi.2.12.2.nupkg.sha512"
   ],
   "logs": []
 }
