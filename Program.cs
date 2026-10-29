@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddDbContext<miContextDb>(options => options.UseSqlite("Data Source=BaseDatos/mibase.db"));
-builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<IAutoService, AutoService>();
 
 var app = builder.Build();
 
