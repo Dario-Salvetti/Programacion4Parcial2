@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj": {}
+    "C:\\Users\\Matias\\Desktop\\Programacion_4\\parcial2\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj": {
+    "C:\\Users\\Matias\\Desktop\\Programacion_4\\parcial2\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj",
+        "projectUniqueName": "C:\\Users\\Matias\\Desktop\\Programacion_4\\parcial2\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj",
         "projectName": "ApiEfCore",
-        "projectPath": "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj",
-        "packagesPath": "C:\\Users\\IVANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\obj\\",
+        "projectPath": "C:\\Users\\Matias\\Desktop\\Programacion_4\\parcial2\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj",
+        "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matias\\Desktop\\Programacion_4\\parcial2\\Programacion4Parcial2\\Programacion4Parcial2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IVANA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Matias\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -38,10 +39,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
@@ -78,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

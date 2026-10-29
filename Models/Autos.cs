@@ -10,7 +10,7 @@ public class Auto
     public string Marca { get; set; }
     [MaxLength(100)]
     public string? Modelo { get; set; }
-    [Range(1950,2026)]
+    [Range(1885,2026)]
     public int Año { get; set; }
     [Range(1000000, double.MaxValue)]
     public decimal Precio { get; set; }
