@@ -3,31 +3,31 @@ using ApiEfCore.Models;
 using Microsoft.EntityFrameworkCore;
 namespace ApiEfCore.Services;
 
-public class AutoService : IAutoService
+public class VehiculoService : IVehiculoService
 {
     private readonly miContextDb _dbContext;
 
-    public AutoService(miContextDb dbContext)
+    public VehiculoService(miContextDb dbContext)
     {
         _dbContext = dbContext;
     }
-    public async Task<List<Auto>> GetAllAsync()
+    public async Task<List<Vehiculo>> GetAllAsync()
     {
-        return await _dbContext.Autos.ToListAsync();
+        return await _dbContext.vehiculo.ToListAsync();
     }
-    public async Task<Auto?> GetByIdAsync(int id)
+    public async Task<Vehiculo?> GetByIdAsync(int id)
     {
-        return await _dbContext.Autos.FindAsync(id);
+        return await _dbContext.vehiculo.FindAsync(id);
     }
-    public async Task<Auto> CreateAsync(Auto Auto)
+    public async Task<Vehiculo> CreateAsync(Vehiculo Auto)
     {
-        _dbContext.Autos.Add(Auto);
+        _dbContext.vehiculo.Add(Auto);
         await _dbContext.SaveChangesAsync();
         return Auto;
     }
-    public async Task<bool> UpdateAsync(int id, Auto Auto)
+    public async Task<bool> UpdateAsync(int id, Vehiculo Auto)
     {
-        var existing = await _dbContext.Autos.FindAsync(id);
+        var existing = await _dbContext.vehiculo.FindAsync(id);
         if (existing is null)
         {
             return false;
@@ -41,12 +41,12 @@ public class AutoService : IAutoService
     }
     public async Task<bool> DeleteAsync(int id)
     {
-        var existing = await _dbContext.Autos.FindAsync(id);
+        var existing = await _dbContext.vehiculo.FindAsync(id);
         if (existing is null)
         {
             return false;
         }
-        _dbContext.Autos.Remove(existing);
+        _dbContext.vehiculo.Remove(existing);
         await _dbContext.SaveChangesAsync();
         return true;
     }

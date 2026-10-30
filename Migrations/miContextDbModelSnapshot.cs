@@ -16,7 +16,7 @@ namespace ApiEfCore.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.14");
 
-            modelBuilder.Entity("ApiEfCore.Models.Auto", b =>
+            modelBuilder.Entity("ApiEfCore.Models.Vehiculo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace ApiEfCore.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Autos");
+                    b.ToTable("vehiculo");
                 });
 #pragma warning restore 612, 618
         }

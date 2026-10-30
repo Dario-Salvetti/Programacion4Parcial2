@@ -7,8 +7,8 @@ namespace ApiEfCore.Controllers;
 [Route("api/[controller]")]
 public class AutosController : ControllerBase
 {
-    private readonly IAutoService _AutoService;
-    public AutosController(IAutoService AutoService)
+    private readonly IVehiculoService _AutoService;
+    public AutosController(IVehiculoService AutoService)
     {
         _AutoService = AutoService;
     }

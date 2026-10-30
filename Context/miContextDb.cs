@@ -4,7 +4,7 @@ namespace ApiEfCore.Context;
 
 public class miContextDb : DbContext
 {
-    public DbSet<Auto> Autos { get; set; }
+    public DbSet<Vehiculo> vehiculo { get; set; }
     public miContextDb(DbContextOptions<miContextDb> options): base(options)
     {
     }
