@@ -1,17 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 namespace ApiEfCore.Models;
 
-public class Moto
+public class Moto : Vehiculo
 {   
-    [Key]
-    public int Id { get; set; }
-    [Required(ErrorMessage = "Se requiere una marca")]
-    [MaxLength(25)]
-    public string Marca { get; set; }
-    [MaxLength(100)]
-    public string? Modelo { get; set; }
-    [Range(1885,2026)]
-    public int Año { get; set; }
+
     [Range(500000, double.MaxValue)]
-    public decimal Precio { get; set; }
+    public override decimal Precio { get; set; }
 }
