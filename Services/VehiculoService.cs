@@ -50,5 +50,12 @@ public class VehiculoService : IVehiculoService
         await _dbContext.SaveChangesAsync();
         return true;
     }
+   public async Task<List<Vehiculo>> GetByTipoAsync(TipoVehiculo tipo)
+    {
+        return await _dbContext.vehiculo
+            .Where(v => v.TipoVehiculo == tipo)
+            .ToListAsync();
+    }
 
 }
+

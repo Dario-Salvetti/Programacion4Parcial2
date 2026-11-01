@@ -2,6 +2,8 @@ using ApiEfCore.Models;
 using ApiEfCore.Services;
 using Microsoft.AspNetCore.Mvc;
 namespace ApiEfCore.Controllers;
+using System.Collections.Generic;
+
 
 [ApiController]
 [Route("api/[controller]")]
@@ -17,6 +19,7 @@ public class VehiculosController : ControllerBase
     {
         return Ok(await _VehiculoService.GetAllAsync());
     }
+
     [HttpGet("{id}")]
     public async Task<ActionResult<Vehiculo>> GetById(int id)
     {
@@ -26,6 +29,13 @@ public class VehiculosController : ControllerBase
             return NotFound();
         }
         return Ok(vehiculo);
+    }
+    
+[HttpGet("tipo/{tipo}")]
+    public async Task<ActionResult<List<Vehiculo>>> GetByTipo(TipoVehiculo tipo)
+    {
+        var vehiculos = await _VehiculoService.GetByTipoAsync(tipo);
+        return Ok(vehiculos);
     }
     [HttpPost]
     public async Task<ActionResult<Vehiculo>> Create(Vehiculo vehiculo)

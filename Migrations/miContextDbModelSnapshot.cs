@@ -37,6 +37,9 @@ namespace ApiEfCore.Migrations
                     b.Property<decimal>("Precio")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("TipoVehiculo")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.ToTable("vehiculo");

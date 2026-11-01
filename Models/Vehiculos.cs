@@ -1,7 +1,10 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 namespace ApiEfCore.Models;
-
+public enum TipoVehiculo{
+    Auto,
+    Moto
+}
 public class Vehiculo
 {
     [Key]
@@ -14,9 +17,6 @@ public class Vehiculo
     [Range(1885,2026)]
     public int Año { get; set; }
     public virtual decimal Precio { get; set; }
-    public enum TipoVehiculo{
-    Auto,
-    Moto
-}
+    public TipoVehiculo TipoVehiculo { get; set; }
 
 }
