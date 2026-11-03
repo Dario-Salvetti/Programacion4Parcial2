@@ -2,6 +2,7 @@ using ApiEfCore.Models;
 using ApiEfCore.Services;
 using Microsoft.AspNetCore.Mvc;
 namespace ApiEfCore.Controllers;
+
 using System.Collections.Generic;
 
 
@@ -30,8 +31,8 @@ public class VehiculosController : ControllerBase
         }
         return Ok(vehiculo);
     }
-    
-[HttpGet("tipo/{tipo}")]
+
+    [HttpGet("tipo/{tipo}")]
     public async Task<ActionResult<List<Vehiculo>>> GetByTipo(TipoVehiculo tipo)
     {
         var vehiculos = await _VehiculoService.GetByTipoAsync(tipo);
@@ -40,8 +41,15 @@ public class VehiculosController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Vehiculo>> Create(Vehiculo vehiculo)
     {
-        var created = await _VehiculoService.CreateAsync(vehiculo);
-        return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        try
+        {
+            var created = await _VehiculoService.CreateAsync(vehiculo);
+            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new { mensaje = ex.Message });
+        }
     }
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, Vehiculo vehiculo)
