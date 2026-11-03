@@ -2460,24 +2460,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IVANA\\.nuget\\packages\\": {}
+    "/home/dario/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj",
+      "projectUniqueName": "/home/dario/Escritorio/Programacion 4/Ejercicios/Parcial2/ApiEfCore.csproj",
       "projectName": "ApiEfCore",
-      "projectPath": "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\ApiEfCore.csproj",
-      "packagesPath": "C:\\Users\\IVANA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IVANA\\Desktop\\Programacion4Parcial2\\Programacion4Parcial2\\obj\\",
+      "projectPath": "/home/dario/Escritorio/Programacion 4/Ejercicios/Parcial2/ApiEfCore.csproj",
+      "packagesPath": "/home/dario/.nuget/packages/",
+      "outputPath": "/home/dario/Escritorio/Programacion 4/Ejercicios/Parcial2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IVANA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/dario/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2496,7 +2497,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -2536,7 +2537,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.114/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
