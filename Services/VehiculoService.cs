@@ -34,17 +34,17 @@ public class VehiculoService : IVehiculoService
         await _dbContext.SaveChangesAsync();
         return vehiculo;
     }
-    public async Task<bool> UpdateAsync(int id, Vehiculo Auto)
+    public async Task<bool> UpdateAsync(int id, Vehiculo vehiculo)
     {
         var existing = await _dbContext.vehiculo.FindAsync(id);
         if (existing is null)
         {
             return false;
         }
-        existing.Marca = Auto.Marca;
-        existing.Modelo = Auto.Modelo;
-        existing.Año = Auto.Año;
-        existing.Precio = Auto.Precio;
+        existing.Marca = vehiculo.Marca;
+        existing.Modelo = vehiculo.Modelo;
+        existing.Año = vehiculo.Año;
+        existing.Precio = vehiculo.Precio;
         await _dbContext.SaveChangesAsync();
         return true;
     }
